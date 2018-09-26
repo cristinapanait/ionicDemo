@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
+import {DetailsPage} from "../details/details";
 
 /**
  * Generated class for the UsersPage page.
@@ -32,7 +33,7 @@ export class UsersPage {
   }
 
   goToUser(user) {
-        
+    this.navCtrl.push(DetailsPage, user);
   }
 
 }

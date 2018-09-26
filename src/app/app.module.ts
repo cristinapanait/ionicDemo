@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {UsersPage} from "../pages/users/users";
+import {DetailsPage} from "../pages/details/details";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {UsersPage} from "../pages/users/users";
     ContactPage,
     HomePage,
     TabsPage,
-    UsersPage
+    UsersPage,
+    DetailsPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import {UsersPage} from "../pages/users/users";
     ContactPage,
     HomePage,
     TabsPage,
-    UsersPage // in cazul in care se primesc notificari si trebuie sa se deschida aplicatia pe o anumita pagina
+    UsersPage, // in cazul in care se primesc notificari si trebuie sa se deschida aplicatia pe o anumita pagina
+    DetailsPage
   ],
   providers: [
     StatusBar,
